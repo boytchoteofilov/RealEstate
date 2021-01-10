@@ -9,6 +9,6 @@
     {
         Task CreateEstateAsync(EstateCreateInputModel input);
 
-        IEnumerable<T> Search<T>(int number);
+        IEnumerable<T> Search<T>(int number, string location);
     }
 }

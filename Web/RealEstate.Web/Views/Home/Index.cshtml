@@ -10,6 +10,14 @@
             <input asp-for="@Model.Number" placeholder="Number" />
             <span asp-validation-for="@Model.Number"></span>
         </div>
+        <div>
+            <input asp-for="@Model.Location" placeholder="Location" />
+            <span asp-validation-for="@Model.Location"></span>
+        </div>
+        <div>
+            <input asp-for="@Model.Status" placeholder="Status" />
+            <span asp-validation-for="@Model.Status"></span>
+        </div>
 
         <input type="submit" class="btn btn-light" />
     </form>

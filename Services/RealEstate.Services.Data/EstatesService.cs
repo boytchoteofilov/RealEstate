@@ -35,9 +35,9 @@
             await this.estatesRepository.SaveChangesAsync();
         }
 
-        public IEnumerable<T> Search<T>(int number)
+        public IEnumerable<T> Search<T>(int number, string title)
         {
-           return this.estatesRepository.All().Where(x => x.Number == number).To<T>().ToList();
+            return this.estatesRepository.All().Where(x => x.Number == number).Where(x => x.Title == title).To<T>().ToList();
         }
     }
 }

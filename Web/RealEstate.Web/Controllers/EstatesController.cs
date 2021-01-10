@@ -60,7 +60,7 @@
         {
             var vm = new EstatesListViewModel()
             {
-                Estates = this.estatesService.Search<EstatesInListViewModel>(data.Number),
+                Estates = this.estatesService.Search<EstatesInListViewModel>(data.Number, data.Location),
             };
 
             return this.View(vm);
