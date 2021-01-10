@@ -2,12 +2,10 @@
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using RealEstate.Common;
-    using RealEstate.Web.Controllers;
 
-    [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
+    [Authorize(Roles = "Admin")]
     [Area("Administration")]
-    public class AdministrationController : BaseController
+    public class AdministrationController : Controller
     {
     }
 }

@@ -8,7 +8,7 @@
     using RealEstate.Web.ViewModels;
     using RealEstate.Web.ViewModels.Estates;
 
-    public class HomeController : BaseController
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {

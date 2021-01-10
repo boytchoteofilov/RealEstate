@@ -26,14 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RealEstate.Common\RealEstate.Common.csproj" />
     <ProjectReference Include="..\..\Data\RealEstate.Data.Models\RealEstate.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\RealEstate.Data\RealEstate.Data.csproj" />
     <ProjectReference Include="..\..\Services\RealEstate.Services.Data\RealEstate.Services.Data.csproj" />
     <ProjectReference Include="..\..\Services\RealEstate.Services.Mapping\RealEstate.Services.Mapping.csproj" />
     <ProjectReference Include="..\..\Services\RealEstate.Services.Messaging\RealEstate.Services.Messaging.csproj" />
-    <ProjectReference Include="..\..\Services\RealEstate.Services\RealEstate.Services.csproj" />
-    <ProjectReference Include="..\RealEstate.Web.Infrastructure\RealEstate.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\RealEstate.Web.ViewModels\RealEstate.Web.ViewModels.csproj" />
   </ItemGroup>
 </Project>

@@ -39,7 +39,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RealEstate.Common\RealEstate.Common.csproj" />
     <ProjectReference Include="..\RealEstate.Data.Common\RealEstate.Data.Common.csproj" />
     <ProjectReference Include="..\RealEstate.Data.Models\RealEstate.Data.Models.csproj" />
   </ItemGroup>

@@ -23,8 +23,6 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
-
         public DbSet<Buyer> Buyers { get; set; }
 
         public DbSet<Estate> Estates { get; set; }
