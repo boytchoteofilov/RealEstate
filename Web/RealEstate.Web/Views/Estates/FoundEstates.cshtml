@@ -1,0 +1,24 @@
+﻿@using RealEstate.Web.ViewModels.Estates
+@model EstatesListViewModel
+
+<h1>Found properties #</h1>
+
+<div>
+    @if (Model.Estates != null)
+    {
+        @foreach (var estate in Model.Estates)
+        {
+            <div>
+                <ul>
+                    <li>@estate.Title</li>
+                    <li>@estate.Number</li>
+                </ul>
+            </div>
+        }
+    }
+    else
+    {
+      <h3>Nothing found</h3>
+    }
+
+</div>

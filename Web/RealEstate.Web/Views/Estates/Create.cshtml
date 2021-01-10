@@ -1,0 +1,24 @@
+﻿@model RealEstate.Web.ViewModels.Estates.EstateCreateInputModel
+
+@{ 
+    this.ViewData["Title"] = "Create new Estate";
+    var estateCategories = Model.EstateCategories.Select(x => new SelectListItem(x.Name, x.Id.ToString()));
+}
+
+<h1>@this.ViewData["Title"]</h1>
+
+<div asp-validation-summary="All"></div>
+
+<form method="post">
+    <div class="form-group row">
+        <label asp-for="@Model.Title" class="col-form-label"></label>
+        <input asp-for="@Model.Title" class="form-control"/>
+        <span asp-validation-for="@Model.Title" class="col-form-label"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="@Model.EstateCategoryId" class="col-form-label"></label>
+        <select asp-for="@Model.EstateCategoryId" asp-items="estateCategories" class="form-control"></select>
+        <span asp-validation-for="@Model.EstateCategoryId" class="col-form-label"></span>
+    </div>
+    <input type="submit" class="btn btn-success" />
+</form>

@@ -1,0 +1,16 @@
+﻿@using  RealEstate.Web.ViewModels.Estates
+@model EstateSearchViewModel
+@{
+    this.ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form method="post" asp-action="FoundEstates" asp-controller="Estates">
+        <div>
+            <input asp-for="@Model.Number" placeholder="Number" />
+            <span asp-validation-for="@Model.Number"></span>
+        </div>
+
+        <input type="submit" class="btn btn-light" />
+    </form>
+</div>
